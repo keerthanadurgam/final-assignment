@@ -10,13 +10,17 @@
             <div class="ITEMS">
                 <h1>SHOPPING LIST</h1>
                 <div class="row">
-                    <input type="text" id="input-box" placeholder="Add your item">
-                    <button onclick="addITEM()">Add</button>
+                    <input type="text" id="input-box" placeholder="New item....">
+                    <button onclick="addITEM()">AddItem</button>
                 </div>
                 <ul id="list-container">
                 <!--<li >Tomato</li>-->
                 </ul>
             </div>
+        <div id="checkeditems">
+            <button id="total" onclick="total()">count total items</button>
+            <p id="show">0</p>
+            <button id= "hide" onclick="Hide()">Hideitems</button>
         </div>
         <script src="hello.js"></script>
     </body>

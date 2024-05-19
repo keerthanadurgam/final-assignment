@@ -1,5 +1,6 @@
 const inputBox = document.getElementById("input-box");
 const listcontainer = document.getElementById("list-container");
+
 function addITEM(){
     if(inputBox.value ===''){
     }
@@ -7,11 +8,11 @@ function addITEM(){
     let li = document.createElement("li")
     li.innerHTML = inputBox.value;
     listcontainer.appendChild(li);
-    inputBox.value = "";
+     inputBox.value = "";
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
-    li.appendChild(span);}
-}
+   li.appendChild(span);}
+    }
 listcontainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
@@ -20,4 +21,23 @@ listcontainer.addEventListener("click", function(e){
         e.target.parentElement.remove();
     }
     }, false);
+    function Hide(){
+        document.getElementById("list-container").style.display = "none";  
+    }
+    function total(){
+    const listItems = document.querySelectorAll("list-container");
+    const count = listItems.length;
+}
+function total(){
+    var totalitems= document.querySelectorAll('ul li').length;
+    document.getElementById('show').textContent = totalitems;
+}
+
+    
+    
+
+         
+
+
+    
  
